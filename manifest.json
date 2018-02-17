@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Ecosia Idle",
+	"version": "1.1.0",
+	"icons": { "128": "128.png" },
+	"author": "Elias Gabriel",
+	"description": "This extension searches on Ecosia behind the scenes so that you don't have to compromise search quality to be ecofriendly.",
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_title": "Ecosia-I"
+	},
+	"background": {
+		"persistent": false,
+		"scripts": [ "events.js" ]
+	},
+	"permissions": [ "storage", "tabs", "*://*/" ],
+	"web_accessible_resources": [ "footer.png", "footer2.png" ]
+}
